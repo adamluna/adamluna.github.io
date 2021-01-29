@@ -11,6 +11,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Adam Luna">
     <title>Adam Luna - Web Developer Portfolio</title>
     <!--Google Font-->
     <link
@@ -23,7 +24,7 @@
   <body>
     <!--Navbar-->
     <div class="container">
-      <div class="nav-wrapper">
+      <div class="nav-wrapper" id="top">
         <div class="left-side">
           <div class="nav-link-wrapper active-nav-link">
             <a href="index.html">Home</a>
@@ -48,7 +49,7 @@
       </div>
       <!--Main Content-->
       <div class="profile-content-wrapper">
-        <img src="images/unnamed.jpg" alt="Photo of Adam Luna" />
+        <img src="images/AdamLuna.jpg" id="about" alt="Photo of Adam Luna and his Dog" />
         <h1>Hi, I'm Adam.</h1>
         <p>
           I'm aspiring Web Developer, currently pursuing a Bachelor of Science
@@ -66,10 +67,51 @@
           a full-time developer role.
         </p>
 
-        <h1>Projects</h1>
+        <!--Projects Section-->
+        <h1 id="projects">Projects</h1>
         <p>Check out some samples of my work below:</p>
 
-        <h1>Contact</h1>
+        <!-- Projects Gallery -->
+        <div class="row">
+          <div class="column">
+            <div class="content">
+              <img src="images/bioSite.png" alt="Image of bioSite" style="width:100%">
+              <h3><a href="https://adamluna.github.io/bioSite/" class="href" target="_blank">bioSite</a></h3>
+              <p>Lorem ipsum..</p>
+            </div>
+          </div>
+          <div class="column">
+            <div class="content">
+              <img src="" alt="Image of bioSite Prototype" style="width:100%">
+              <h3>bioSite Prototype</h3>
+              <p>Lorem ipsum..</p>
+            </div>
+          </div>
+          <div class="column">
+            <div class="content">
+              <img src="images/WEB 231.png" alt="Image of Web 230/231 Repository" style="width:100%">
+              <h3><a href="https://github.com/adamluna/web-231" class="href" target="_blank">web-230/231 Repository</a></h3>
+              <p>Lorem ipsum..</p>
+            </div>
+          </div>
+          <div class="column">
+            <div class="content">
+              <img src="images/Personal Portfolio Prototype.png" alt="Image of Personal Portfolio Prototype" style="width:100%">
+              <h3><a href="https://github.com/adamluna/web-330/blob/main/week-2/luna-assignment2.4.jpg" class="href" target="_blank">Personal Portfolio Prototype</a></h3>
+              <p>Lorem ipsum..</p>
+            </div>
+          </div>
+          <div class="column">
+            <div class="content">
+              <img src="images/WEB 330.png" alt="Image of Web 330 Repository" style="width:100%">
+              <h3><a href="https://github.com/adamluna/web-330" class="href" target="_blank">web-330 Repository</a></h3>
+              <p>Lorem ipsum..</p>
+            </div>
+          </div>
+        </div>
+
+        <!--Contact Section-->
+        <h1 id="contact">Contact</h1>
         <p>
           Have a question? Just want to chat?
           <div class="email">
@@ -78,7 +120,10 @@
         </p>
       </div>
 
-      <footer>&copy;2021 <span style="font-size: 1.25em;">Adam Luna</span>. All rights reserved.</footer>
+      <!--Footer Section-->
+      <footer>&copy;2021 <span style="font-size: 1.25em;">Adam Luna</span>. All rights reserved.<br>
+        <a href="#top" class="href">Back to top</a>
+      </footer>
     </div>
   </body>
 </html>
