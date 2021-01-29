@@ -1,0 +1,78 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0px;
+  }
+  
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  
+  .nav-wrapper {
+    display: flex;
+    background-color: teal;
+    justify-content: space-between;
+    padding: 25px;
+  }
+  
+  .left-side {
+    display: flex;
+  }
+
+  .right-side {
+      color: white;
+  }
+  
+  .nav-wrapper > .left-side > div {
+    margin-right: 20px;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+  }
+  
+  .nav-link-wrapper {
+    height: 22px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+  }
+  
+  .active-nav-link {
+    border-bottom: 1px solid white;
+  }
+  
+  .active-nav-link a {
+    color: white !important;
+  }
+  
+  .nav-link-wrapper a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.5s;
+  }
+  
+  .nav-link-wrapper:hover {
+    border-bottom: 1px solid white;
+  }
+  
+  .nav-link-wrapper a:hover {
+    color: white;
+  }
+
+  .profile-content-wrapper {
+    padding: 30px;
+    text-align: center;
+  }
+  
+  .profile-content-wrapper h1 {
+    color: teal;
+  }
+
+  .email a:hover {
+      color: teal;
+  }
+
+  footer {
+      background-color: teal;
+      color: white;
+      text-align: center;
+      height: 30px
+  }
