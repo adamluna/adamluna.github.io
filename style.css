@@ -1,142 +1,142 @@
 body {
-    font-family: 'Montserrat', sans-serif;
-    margin: 0px;
-  }
-  
-  .container {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-  
-  .nav-wrapper {
-    display: flex;
-    background-color: teal;
-    justify-content: space-between;
-    padding: 30px;
-  }
-  
-  .left-side {
-    display: flex;
-  }
+  font-family: 'Montserrat', sans-serif;
+  margin: 0px;
+}
 
-  .right-side {
-      color: white;
-  }
-  
-  .nav-wrapper > .left-side > div {
-    margin-right: 20px;
-    text-transform: uppercase;
-    font-size: 0.9rem;
-  }
-  
-  .nav-link-wrapper {
-    height: 22px;
-    border-bottom: 1px solid transparent;
-    transition: border-bottom 0.5s;
-  }
-  
-  .active-nav-link {
-    border-bottom: 1px solid white;
-  }
-  
-  .active-nav-link a {
-    color: white !important;
-  }
-  
-  .nav-link-wrapper a {
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.nav-wrapper {
+  display: flex;
+  background-color: teal;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+.left-side {
+  display: flex;
+}
+
+.right-side {
     color: white;
-    text-decoration: none;
-    transition: color 0.5s;
-  }
-  
-  .nav-link-wrapper:hover {
-    border-bottom: 1px solid white;
-  }
-  
-  .nav-link-wrapper a:hover {
-    color: white;
-  }
+}
 
-  .profile-content-wrapper {
-    padding: 30px;
-    text-align: center;
-  }
-  
-  .profile-content-wrapper h1 {
-    color: teal;
-  }
+.nav-wrapper > .left-side > div {
+  margin-right: 20px;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
 
-  .name {
-    font-weight: bold;
-  }
+.nav-link-wrapper {
+  height: 22px;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 0.5s;
+}
 
-  .row {
-    margin: 8px -16px;
-  }
-  
-  /* Add padding BETWEEN each column (if you want) */
-  .row,
-  .row > .column {
-    padding: 8px;
-  }
-  
-  /* Create four equal columns that floats next to each other */
+.active-nav-link {
+  border-bottom: 1px solid white;
+}
+
+.active-nav-link a {
+  color: white !important;
+}
+
+.nav-link-wrapper a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.5s;
+}
+
+.nav-link-wrapper:hover {
+  border-bottom: 1px solid white;
+}
+
+.nav-link-wrapper a:hover {
+  color: white;
+}
+
+.profile-content-wrapper {
+  padding: 30px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
+}
+
+.profile-content-wrapper h1 {
+  color: teal;
+}
+
+h2 {
+  color: teal;
+}
+
+.name {
+  font-weight: bold;
+}
+
+/* Use flexbox to put images side by side */
+.row {
+  display: flex;
+}
+
+/* Create 3 column layout using flexbox. Bottom two images will appear larger until 3rd image is added */
+.column {
+  flex: 33.33%;
+  padding: 5px;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+  align-items: center;
+}
+
+.content h3 {
+  color: gray;
+}
+
+h3 a:hover {
+  color:teal;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
   .column {
-    float: left;
-    width: 25%;
+    width: 50%;
   }
-  
-  /* Clear floats after rows */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
-  /* Content */
-  .content {
-    background-color: white;
-    padding: 10px;
-  }
+}
 
-  .content h3 {
-    color: gray;
+/* Responsive layout - makes portfolio items stack on top of each other*/
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
   }
+}
 
-  h3 a:hover {
-    color:teal;
-  }
-  
-  /* Responsive layout - makes a two column-layout instead of four columns */
-  @media screen and (max-width: 900px) {
-    .column {
-      width: 50%;
-    }
-  }
-  
-  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 600px) {
-    .column {
-      width: 100%;
-    }
-  }
+.email a:hover {
+    color: teal;
+}
 
-  .email a:hover {
-      color: teal;
-  }
+.linkedin a:hover {
+  color: teal;
+}
 
-  footer {
-      background-color: teal;
-      color: white;
-      text-align: center;
-      height: 65px;
-      padding-top: 20px;
-  }
-
-  footer a {
+footer {
+    background-color: teal;
     color: white;
-  }
+    text-align: center;
+    height: 65px;
+    padding-top: 20px;
+}
 
-  footer a:hover {
-    color:black;
-  }
+footer a {
+  color: white;
+}
+
+footer a:hover {
+  color:black;
+}
