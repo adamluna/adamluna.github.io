@@ -1,5 +1,5 @@
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Poppins', sans-serif;
   margin: 0px;
 }
 
@@ -117,11 +117,20 @@ h3 a:hover {
   }
 }
 
+.email a {
+  color: gray;
+}
+
 .email a:hover {
     color: teal;
 }
 
-.linkedin a:hover {
+.social a {
+  font-size: 2em;
+  color: gray;
+}
+
+.social a:hover{
   color: teal;
 }
 
