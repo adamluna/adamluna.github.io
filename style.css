@@ -117,6 +117,10 @@ h3 a:hover {
   }
 }
 
+.email {
+  padding-bottom: 10px;
+}
+
 .email a {
   color: gray;
 }
@@ -128,6 +132,7 @@ h3 a:hover {
 .social a {
   font-size: 2em;
   color: gray;
+  padding: 5px;
 }
 
 .social a:hover{
