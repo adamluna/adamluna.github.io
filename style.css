@@ -3,24 +3,29 @@ body {
   margin: 0px;
 }
 
+
 .container {
-  display: grid;
+  display: flexbox;
   grid-template-columns: 1fr;
 }
 
 .nav-wrapper {
   display: flex;
+  position: sticky;
+  top: 0;
   background-color: teal;
   justify-content: space-between;
-  padding: 30px;
+  padding: 15px;
 }
 
 .left-side {
   display: flex;
+  padding-left: 40px;
 }
 
 .right-side {
     color: white;
+    padding-right: 40px;
 }
 
 .nav-wrapper > .left-side > div {
@@ -79,7 +84,7 @@ h2 {
 
 /* Use flexbox to put images side by side */
 .row {
-  display: flex;
+  display: inline-flex;
 }
 
 /* Create 3 column layout using flexbox. Bottom two images will appear larger until 3rd image is added */
@@ -101,6 +106,11 @@ h2 {
 
 h3 a:hover {
   color:teal;
+}
+
+.projects {
+  display: inline-flex;
+  flex-wrap: wrap;
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
@@ -144,7 +154,8 @@ footer {
     color: white;
     text-align: center;
     height: 65px;
-    padding-top: 20px;
+    padding-top: 10px;
+    bottom: 0;
 }
 
 footer a {
